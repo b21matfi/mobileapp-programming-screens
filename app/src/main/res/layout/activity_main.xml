@@ -10,18 +10,22 @@
         android:id="@+id/myUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="50dp"
         android:hint="Username"
         android:minHeight="48dp"
-        android:layout_margin="50dp"
 
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="69dp" />
 
     <Button
         android:id="@+id/myButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Signin"
-        android:layout_marginLeft="600dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="195dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

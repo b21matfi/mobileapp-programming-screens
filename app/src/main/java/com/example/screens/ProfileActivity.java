@@ -42,7 +42,7 @@ public class ProfileActivity extends AppCompatActivity {
     @Override
     protected void onPostResume() {
         super.onPostResume();
-        Log.d("==>", "ProfileActivity Resumeed");
+        Log.d("==>", "ProfileActivity Resumed");
     }
 
     @Override

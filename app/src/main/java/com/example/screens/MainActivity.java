@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onPostResume() {
         super.onPostResume();
-        Log.d("==>", "MainActivity Resumeed");
+        Log.d("==>", "MainActivity Resumed");
     }
 
     @Override

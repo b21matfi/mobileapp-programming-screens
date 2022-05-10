@@ -8,19 +8,24 @@
 
     <Button
         android:id="@+id/myButton_Signout"
-        android:text="Signout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints" />
+        android:text="Signout"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="225dp" />
 
     <TextView
         android:id="@+id/myUsernameView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="99dp"
+        android:layout_height="40dp"
         android:layout_margin="5dp"
         android:background="@color/colorAccent"
         android:text="TextView - 1"
         android:textColor="#004D40"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="136dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
