@@ -7,16 +7,23 @@ första activty aktiverar den när man klickar på en knapp. När man klickar p�
 Det jag gjorde var att man skriver sitt namn och sedan så trycker man på sign in när man har gjort det så kommer man till den andra sidan och på den andra sidan så
 ser man det namnet man använde för att logga in och en annan knapp för att logga ut.
 
-
+Figur 1 är koden som man använder sig utav för att kunna byta till en annan acitvity.
+Figur 2 är kod för att ta fram extra från den första sidan till den andra sidan. 
+figur 3 är kod som gör att man kan logga ut från appen när man är klar.
+Figur 4 är koden som jag använnde för att skapa en knapp för appen. 
 
 ```
     // För att första sidan ska byta till andra. 
 Intent intent = new Intent(MainActivity.this,ProfileActivity.class);
                 startActivity(intent);
-
+```
+Figur 1
+```
                 intent.putExtra("Username",Username.getText().toString());
                 startActivity(intent);
-                
+```
+Figur 2 
+```
                 
                 //För att logga ut 
                 Signout.setOnClickListener(new View.OnClickListener() {
@@ -24,7 +31,9 @@ Intent intent = new Intent(MainActivity.this,ProfileActivity.class);
             public void onClick(View view) {
                 Log.d("==>", "ProfileActivity button pressed");
                 finish();
-                
+```
+Figur 3 
+```                
                 //Knapp för att logga ut 
                     <Button
         android:id="@+id/myButton_Signout"
@@ -36,10 +45,11 @@ Intent intent = new Intent(MainActivity.this,ProfileActivity.class);
     tools:layout_editor_absoluteX="161dp"
     tools:layout_editor_absoluteY="225dp" />
 ```
+Figur 4 
 
 Bilder läggs i samma mapp som markdown-filen.
 
-![](android.png)
+![](Signout.png)
 
 Läs gärna:
 
